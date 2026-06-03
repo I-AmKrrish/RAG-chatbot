@@ -1,0 +1,128 @@
+# =========================
+# Core LLM / AI Frameworks
+# =========================
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langgraph
+
+# =========================
+# Google Gemini
+# =========================
+langchain-google-genai
+google-generativeai
+
+# =========================
+# Mistral AI
+# =========================
+langchain-mistralai
+mistralai
+
+# =========================
+# Vector Databases
+# =========================
+chromadb
+faiss-cpu
+
+# =========================
+# Embedding Models
+# =========================
+sentence-transformers
+transformers
+torch
+
+# =========================
+# Document Loaders
+# =========================
+pypdf
+pdfplumber
+pymupdf
+python-docx
+unstructured
+openpyxl
+
+# =========================
+# Text Processing
+# =========================
+tiktoken
+nltk
+spacy
+
+# =========================
+# API / Backend
+# =========================
+fastapi
+uvicorn
+pydantic
+
+# =========================
+# Frontend / UI
+# =========================
+streamlit
+gradio
+
+# =========================
+# Environment Variables
+# =========================
+python-dotenv
+
+# =========================
+# Utilities
+# =========================
+numpy
+pandas
+scikit-learn
+requests
+aiohttp
+
+# =========================
+# Logging & Monitoring
+# =========================
+loguru
+
+# =========================
+# Database (Optional)
+# =========================
+sqlalchemy
+
+# =========================
+# Web Scraping (Optional)
+# =========================
+beautifulsoup4
+lxml
+
+# =========================
+# OCR (Optional)
+# =========================
+pytesseract
+Pillow
+
+# =========================
+# Audio / Multimodal (Optional)
+# =========================
+whisper
+opencv-python
+
+# =========================
+# Evaluation & Experimentation
+# =========================
+ragas
+datasets
+
+# =========================
+# Tokenizers & Acceleration
+# =========================
+accelerate
+bitsandbytes
+
+# =========================
+# Async & Retry
+# =========================
+tenacity
+
+# =========================
+# Jupyter Support
+# =========================
+jupyter
+ipykernel
