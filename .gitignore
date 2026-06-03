@@ -1,0 +1,10 @@
+.env
+.venv/
+chroma_db/
+.agents/
+__pycache__/
+*.pyc
+temp_uploads/
+document_loaders/
+claude_docs/
+skills-lock.json
