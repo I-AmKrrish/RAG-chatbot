@@ -392,11 +392,11 @@ assert mrr(gold_pages, retrieved_pages) == 1.0
 |---|-------|---------|---------------|
 | A1 | Rebuilding BM25 in memory for single PDFs (< 1,000 chunks) takes < 100ms. | Architecture Patterns | If memory or build time is unexpectedly high on larger books, caching the `BM25Retriever` in memory or session state mitigates it completely. |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **How should Streamlit handle multi-turn BM25 caching when new PDFs are uploaded?**
+1. **How should Streamlit handle multi-turn BM25 caching when new PDFs are uploaded?** — RESOLVED: Clear cache or store the active `BM25Retriever` instance in `st.session_state` keyed to `st.session_state.document_name`.
    - What we know: `st.cache_resource` caches based on arguments. If `persist_dir` or document name changes, it must invalidate.
-   - Recommendation: Clear cache or store the active `BM25Retriever` instance in `st.session_state` keyed to `st.session_state.document_name`.
+   - Resolution: Store the active `BM25Retriever` instance in `st.session_state` keyed to `st.session_state.document_name`, invalidating whenever a new document is processed.
 
 ## Environment Availability
 
