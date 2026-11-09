@@ -23,7 +23,10 @@ This roadmap advances DocMind from a single-document RAG prototype into an advan
 **Plans**: 2 plans
 
 Plans:
+**Wave 1**
 - [ ] 01-01-PLAN.md — Dependencies, pytest setup, in-memory BM25 indexer, local FlashRank cross-encoder reranker, and unit tests
+
+**Wave 2** *(blocked on Wave 1 completion)*
 - [ ] 01-02-PLAN.md — Integration into rag_pipeline.py, Streamlit sidebar dual-engine switcher in app.py, and evaluate_rag.py benchmark run
 
 ### Phase 2: Persistent Conversation Memory
@@ -67,4 +70,3 @@ Phases execute in numeric order: 1 → 2 → 3
 ---
 *Roadmap defined: 2026-11-10*
 *Last updated: 2026-11-10 after initialization*
-
