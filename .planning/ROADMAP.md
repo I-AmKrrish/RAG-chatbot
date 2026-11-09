@@ -23,8 +23,8 @@ This roadmap advances DocMind from a single-document RAG prototype into an advan
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Implement BM25 retriever indexer, local FlashRank cross-encoder reranker, and ensemble pipeline.
-- [ ] 01-02: Integrate hybrid retrieval into `rag_pipeline.py` and run benchmark verification in `evaluate_rag.py`.
+- [ ] 01-01-PLAN.md — Dependencies, pytest setup, in-memory BM25 indexer, local FlashRank cross-encoder reranker, and unit tests
+- [ ] 01-02-PLAN.md — Integration into rag_pipeline.py, Streamlit sidebar dual-engine switcher in app.py, and evaluate_rag.py benchmark run
 
 ### Phase 2: Persistent Conversation Memory
 **Goal**: Provide full multi-turn conversational memory persisted locally in SQLite, allowing users to resume past sessions.
@@ -67,3 +67,4 @@ Phases execute in numeric order: 1 → 2 → 3
 ---
 *Roadmap defined: 2026-11-10*
 *Last updated: 2026-11-10 after initialization*
+
