@@ -20,6 +20,12 @@ langchain-mistralai
 mistralai
 
 # =========================
+# Groq
+# =========================
+langchain-groq
+groq
+
+# =========================
 # Vector Databases
 # =========================
 chromadb
@@ -108,7 +114,8 @@ opencv-python
 # Evaluation & Experimentation
 # =========================
 ragas
-datasets
+datasets==5.1.0
+pytest==9.2.0
 
 # =========================
 # Tokenizers & Acceleration

@@ -1,0 +1,2 @@
+label,timestamp,split,n_questions,n_errors,mean_latency,mean_hit_rate,mean_mrr,correct_refusal_rate,false_refusal_rate,mean_faithfulness,mean_answer_relevancy,mean_context_precision,mean_context_recall,k,chunk_size,chat_model,judge_model
+smoke,2026-11-10T13:37:39,dev,5,0,1.7952,1.0,0.6667,0.0,0.0,0.85,0.9359,0.7667,1.0,4,1000,openai/gpt-oss-120b,mistral:open-mistral-7b

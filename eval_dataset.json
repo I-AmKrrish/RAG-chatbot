@@ -1,0 +1,291 @@
+[
+  {
+    "id": "q001",
+    "question": "Who are the authors of the book Fundamentals of Deep Learning?",
+    "ground_truth": "Nikhil Buduma with contributions by Nicholas Locascio.",
+    "source_pages": [1],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q002",
+    "question": "What is the subtitle of the book Fundamentals of Deep Learning?",
+    "ground_truth": "Designing Next-Generation Machine Intelligence Algorithms.",
+    "source_pages": [1],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q003",
+    "question": "What did the reinvigoration of neural networks in the 2000s lead to according to the preface?",
+    "ground_truth": "Deep learning became an extremely active area of research paving the way for modern machine learning.",
+    "source_pages": [11],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q004",
+    "question": "Which landmark 1998 paper by LeCun, Bottou, Bengio, and Haffner is cited in Chapter 1?",
+    "ground_truth": "Gradient-Based Learning Applied to Document Recognition, published in Proceedings of the IEEE in November 1998.",
+    "source_pages": [16],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q005",
+    "question": "Why is distinguishing a messy zero from a six difficult in algorithmic digit recognition?",
+    "ground_truth": "Because handwritten digits vary, and establishing a cutoff distance between the start and end of the loop can confuse an open zero with a six.",
+    "source_pages": [17],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q006",
+    "question": "What biological structure does recent machine learning research attempt to resemble?",
+    "ground_truth": "Structures utilized by the biological human brain.",
+    "source_pages": [21],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q007",
+    "question": "How can a neural network classification output be represented if an image contains both a dog and a cat?",
+    "ground_truth": "As a binary vector [1, 1], where [1, 0] represents a dog, [0, 1] represents a cat, and [0, 0] represents neither.",
+    "source_pages": [26],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q008",
+    "question": "What is the title of Chapter 2 in the book?",
+    "ground_truth": "Training Feed-Forward Neural Networks.",
+    "source_pages": [31],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q009",
+    "question": "What intuitive scenario is used at the start of Chapter 2 to explain training neural networks?",
+    "ground_truth": "The Fast-Food Problem.",
+    "source_pages": [31],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q010",
+    "question": "What mathematical operations are neural networks expressed as when reformulating artificial neurons?",
+    "ground_truth": "A series of vector and matrix operations.",
+    "source_pages": [26],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q011",
+    "question": "What font style indicates commands or text that should be typed literally by the user according to the conventions?",
+    "ground_truth": "Constant width bold.",
+    "source_pages": [12],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q012",
+    "question": "What central question is raised in Chapter 2 regarding connection weights in a neural network?",
+    "ground_truth": "How exactly to figure out the parameter vectors (weights for all connections in the network) from data.",
+    "source_pages": [31],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q013",
+    "question": "What book by Richard M. Restak and David Grubin is cited regarding brain function?",
+    "ground_truth": "The Secret Life of the Brain (Joseph Henry Press, 2001).",
+    "source_pages": [21],
+    "type": "simple",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q014",
+    "question": "What framework is covered for installation and creating variables in the book's contents?",
+    "ground_truth": "TensorFlow.",
+    "source_pages": [6],
+    "type": "simple",
+    "split": "heldout",
+    "status": "reviewed"
+  },
+  {
+    "id": "q015",
+    "question": "What font style indicates text that should be replaced with user-supplied values?",
+    "ground_truth": "Constant width italic.",
+    "source_pages": [12],
+    "type": "simple",
+    "split": "heldout",
+    "status": "reviewed"
+  },
+  {
+    "id": "q016",
+    "question": "How does the book connect biological brain research to the mathematical representation of artificial neural networks?",
+    "ground_truth": "It explains that biological neural complexity inspired models that resemble brain structures, which are then formulated mathematically as series of vector and matrix operations.",
+    "source_pages": [21, 26],
+    "type": "multi_chunk",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q017",
+    "question": "Trace the transition in the book from introducing artificial neuron formulations to training multi-layer networks.",
+    "ground_truth": "The book begins by expressing neurons mathematically with linear algebra and vectors, introduces multi-label outputs, and then transitions in Chapter 2 to finding optimal parameter weights using the Fast-Food problem.",
+    "source_pages": [26, 31],
+    "type": "multi_chunk",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q018",
+    "question": "How does the book motivate deep learning in Chapter 1 through handwritten digit recognition and historical papers?",
+    "ground_truth": "It highlights the difficulty of hand-crafting heuristic rules for digits like distinguishing zeros from sixes, citing LeCun et al.'s 1998 gradient-based document recognition paper as evidence that machine learning can learn these representations automatically.",
+    "source_pages": [16, 17],
+    "type": "multi_chunk",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q019",
+    "question": "What is the overarching progression from the book's title and preface to its initial mathematical formulation of neural networks?",
+    "ground_truth": "Starting from next-generation machine intelligence in the preface, the book moves from biological inspiration to formal matrix and vector formulations of interconnected artificial neurons.",
+    "source_pages": [1, 11, 26],
+    "type": "multi_chunk",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q020",
+    "question": "How does the author explain moving from a single neuron classification to multi-class and multi-label outputs?",
+    "ground_truth": "Single neuron linear combinations are extended into vectors and matrices, allowing output vectors where multiple elements can be activated simultaneously, such as [1, 1] for images containing both cats and dogs.",
+    "source_pages": [25, 26],
+    "type": "multi_chunk",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q021",
+    "question": "How does the discussion of nonlinear complexity in biological brains lead to the necessity of training parameter vectors?",
+    "ground_truth": "Because biological cognition is deeply nonlinear, artificial networks require multi-layer parameters, motivating Chapter 2's algorithms for discovering weight parameters from empirical training data.",
+    "source_pages": [21, 31],
+    "type": "multi_chunk",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q022",
+    "question": "Synthesize how the book introduces code conventions and code examples in relation to the TensorFlow chapters.",
+    "ground_truth": "The preface outlines typography conventions for code and commands while referencing supplementary code examples, preparing the reader for subsequent chapters that cover installing and manipulating variables in TensorFlow.",
+    "source_pages": [6, 12],
+    "type": "multi_chunk",
+    "split": "heldout",
+    "status": "reviewed"
+  },
+  {
+    "id": "q023",
+    "question": "How do the challenges of manual rule-based programming for computer vision lead into neural network matrix representations?",
+    "ground_truth": "Heuristics fail on messy input patterns like handwritten digits, showing that systems need to learn continuous vector and matrix transformations directly from data.",
+    "source_pages": [16, 17, 26],
+    "type": "multi_chunk",
+    "split": "heldout",
+    "status": "reviewed"
+  },
+  {
+    "id": "q024",
+    "question": "What is the chemical composition of lunar regolith collected by the Apollo 11 mission?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q025",
+    "question": "How does the CRISPR-Cas9 enzyme recognize targeted DNA sequences for gene editing?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q026",
+    "question": "What are the core ingredients required to bake a traditional French chocolate soufflé?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q027",
+    "question": "In what year was the Treaty of Westphalia signed ending the European wars of religion?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q028",
+    "question": "What consensus algorithm does the original Bitcoin protocol use to validate blocks?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "dev",
+    "status": "reviewed"
+  },
+  {
+    "id": "q029",
+    "question": "What is the focal length of the primary mirror on the James Webb Space Telescope?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "heldout",
+    "status": "reviewed"
+  },
+  {
+    "id": "q030",
+    "question": "Which Roman general defeated Hannibal Barca at the Battle of Zama in 202 BC?",
+    "ground_truth": "I could not find the answer in the given documents.",
+    "source_pages": [],
+    "type": "unanswerable",
+    "split": "heldout",
+    "status": "reviewed"
+  },
+  {
+    "id": "draft_001",
+    "question": "Draft question: Does this book mention Python version support?",
+    "ground_truth": "Draft answer to be reviewed.",
+    "source_pages": [12],
+    "type": "simple",
+    "split": "dev",
+    "status": "draft"
+  },
+  {
+    "id": "draft_002",
+    "question": "Draft question: What is the hardware requirement for running TensorFlow examples?",
+    "ground_truth": "Draft answer to be reviewed.",
+    "source_pages": [6],
+    "type": "simple",
+    "split": "dev",
+    "status": "draft"
+  }
+]
+

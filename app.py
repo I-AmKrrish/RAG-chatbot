@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_mistralai import MistralAIEmbeddings, ChatMistralAI
+from langchain_mistralai import MistralAIEmbeddings
+from langchain_groq import ChatGroq
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -90,7 +91,7 @@ def clean_text(text):
 @st.cache_resource
 def get_models():
     embedding_model = MistralAIEmbeddings()
-    llm = ChatMistralAI(model="mistral-medium")
+    llm = ChatGroq(model="openai/gpt-oss-120b", groq_api_key=os.getenv("GROQ_API_KEY"))
     return embedding_model, llm
 
 embedding_model, llm = get_models()
@@ -140,7 +141,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-    st.caption("Powered by Mistral AI + ChromaDB")
+    st.caption("Powered by Groq + Mistral AI Embeddings + ChromaDB")
 
 # --- MAIN CHAT INTERFACE ---
 # Title Banner
@@ -168,8 +169,16 @@ if uploaded_file and process_btn:
             splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
             chunks = splitter.split_documents(docs)
 
+            # Safely clear previous vectors without deleting locked sqlite files on Windows
             if os.path.exists(db_directory):
-                shutil.rmtree(db_directory)
+                try:
+                    existing_vs = Chroma(persist_directory=db_directory, embedding_function=embedding_model)
+                    existing_vs.delete_collection()
+                except Exception:
+                    try:
+                        shutil.rmtree(db_directory)
+                    except Exception:
+                        pass
 
             vectorstore = Chroma.from_documents(
                 documents=chunks,

@@ -56,3 +56,4 @@ Phase 1 elevates retrieval quality for DocMind by combining sparse keyword searc
 - Cloud-hosted rerankers (e.g., Cohere Rerank API) — deferred to keep local costs at zero.
 - Multi-query expansion and HyDE (Hypothetical Document Embeddings) — logged for v2 milestone.
 </deferred>
+

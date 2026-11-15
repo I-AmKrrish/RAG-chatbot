@@ -1,0 +1,28 @@
+{
+  "contract": "1.0.0",
+  "flavor": "core",
+  "milestone": null,
+  "phases": [
+    {
+      "number": "1",
+      "name": "Hybrid Retrieval & Re-ranking",
+      "status": "pending"
+    },
+    {
+      "number": "2",
+      "name": "Persistent Conversation Memory",
+      "status": "pending"
+    },
+    {
+      "number": "3",
+      "name": "Multi-Document Knowledge Management",
+      "status": "pending"
+    }
+  ],
+  "next": {
+    "command": "/gsd-progress --next",
+    "label": "Advance to the next step",
+    "reason": "Phase 1 of 3 · 0% · executing"
+  },
+  "updated_at": "2026-11-09T19:31:03.976Z"
+}
